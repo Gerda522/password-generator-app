@@ -1,23 +1,52 @@
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./fonts/JetBrainsMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./fonts/JetBrainsMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./fonts/JetBrainsMono-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
+:root {
   --foreground: #171717;
+  --custom-dark-gray: 248 15%, 11%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
+    --custom-dark-gray: 248 15%, 11%;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: "JetBrainsMono", Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -28,16 +57,16 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 252 11% 91%;
     --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 248 10% 15%;
+    /* --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --popover-foreground: 240 10% 3.9%; */
+    --primary: 127 100% 82%;
+    --primary-foreground: 248 15%, 11%;
+    --secondary: 127 100% 82%;
+    /* --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 4.8% 95.9%;
@@ -52,19 +81,25 @@ body {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --radius: 0.5rem; */
+    --custom-yellow: 42 91% 68%;
+    --custom-orange: 13 95% 66%;
+    --custom-red: 0 91% 63%;
+    --custom-gray: 251 9% 53%;
+    --custom-light-gray: 252 11% 91%;
+    --custom-dark-gray: 248 15%, 11%;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 252 11% 91%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    /* --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --popover-foreground: 0 0% 98%; */
+    --primary: 127 100% 82%;
+    --primary-foreground: 248 15%, 11%;
+    --secondary: 127, 100%, 82%;
+    /* --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
@@ -78,7 +113,13 @@ body {
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-5: 340 75% 55%; */
+    --custom-yellow: 42 91% 68%;
+    --custom-orange: 13 95% 66%;
+    --custom-red: 0 91% 63%;
+    --custom-gray: 251 9% 53%;
+    --custom-light-gray: 252 11% 91%;
+    --custom-dark-gray: 248 15%, 11%;
   }
 }
 
@@ -87,6 +128,6 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-customDarkGray text-foreground;
   }
-} */
+}

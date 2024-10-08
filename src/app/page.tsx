@@ -3,10 +3,11 @@ import PasswordForm from "./ui/password-form";
 
 export default function Home() {
   return (
-    <div className=" py-4 max-w-md mx-auto">
-      <h1>Password generator</h1>
-
-      <PasswordForm />
+    <div>
+      <div className=" py-4 max-w-md mx-auto min-h-svh flex items-center flex-col justify-center gap-4">
+        <h1 className="text-customGray">Password generator</h1>
+        <PasswordForm />
+      </div>
     </div>
   );
 }
